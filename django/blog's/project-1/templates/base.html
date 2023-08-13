@@ -1,0 +1,45 @@
+{% load static %}
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+
+</head>
+<body>
+    
+
+
+    <!-- navbar -->
+    {% include 'partials/_navbar.html' %}
+	
+
+<!-- block content -->
+{% block content %}
+
+
+{% endblock %}
+
+
+
+{% include 'partials/_footer.html' %}
+			
+			
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/trans2.js' %}"></script>
+
+</body>
+</html>
